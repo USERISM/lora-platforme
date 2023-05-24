@@ -135,23 +135,23 @@ $payload_obj = json_decode($payload_json);
 			<li>
 				<a href="#" id="contact-us">
 					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Message</span>
+					<span class="text">Contact us</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bxs-group' ></i>
-					<span class="text">Team</span>
+					<span class="text">about us</span>
 				</a>
 			</li>
 		</ul>
 		<ul class="side-menu">
-			<li>
+			<!--<li>
 				<a href="#">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Settings</span>
 				</a>
-			</li>
+			</li>-->
 			<li>
 				<a href="firstpage.php" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
@@ -178,11 +178,11 @@ $payload_obj = json_decode($payload_json);
 			</form>
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
-			<a href="#" class="notification">
+			<!--<a href="#" class="notification">
 				<i class='bx bxs-bell' ></i>
 				<span class="num">8</span>
 			</a>
-		
+	-->
 		</nav>
 		<!-- NAVBAR -->
 		<div id="menu-content">

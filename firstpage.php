@@ -29,7 +29,7 @@ if ($conn->connect_error)
         <form name="myform"  method="POST" >
 
             <p>tenantName</p>
-            <input type="tenantName" name="tenantName" placeholder="Enter your tenantName " required="">
+            <input type="text" name="tenantName" placeholder="Enter your tenantName " required="">
 
             <p>tenantId</p>
             <input type="password" name="tenantId" placeholder="Enter your tenantId" required="">
