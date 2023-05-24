@@ -14,7 +14,7 @@ if ($conn->connect_error)
 ?>
 <!DOCTYPE html>
 <head>
-<title>Login Form Design</title>
+<title>Login</title>
 <link rel="stylesheet" type="text/css" href="style1.css">
     </head>
     
@@ -37,12 +37,6 @@ if ($conn->connect_error)
             <div class="error-container">
 
             
-
-           
-            
-            
-
-
         
         <?php
 

@@ -252,32 +252,9 @@ body {
 	border-radius: 0 36px 36px 0;
 	cursor: pointer;
 }
-#content nav .notification {
-	font-size: 20px;
-	position: relative;
-}
-#content nav .notification .num {
-	position: absolute;
-	top: -6px;
-	right: -6px;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	border: 2px solid var(--light);
-	background: var(--red);
-	color: var(--light);
-	font-weight: 700;
-	font-size: 12px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-#content nav .profile img {
-	width: 36px;
-	height: 36px;
-	object-fit: cover;
-	border-radius: 50%;
-}
+
+
+
 #content nav .switch-mode {
 	display: block;
 	min-width: 50px;
@@ -305,6 +282,10 @@ body {
 
 
 
+
+
+
+
 .contact{
     position: relative;
     min-height: 100vh;
@@ -313,7 +294,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(tst.jpg);
+    background:linear-gradient(rgba(121, 120, 120, 0.487), rgba(97, 97, 97, 0.294)), url(tst.jpg);
     background-size: cover;
 }
 .contact .content{
@@ -325,10 +306,12 @@ body {
     font-weight: 500;
     color: #ff0000;
     margin-bottom: 20px;
+	font-weight: bolder;
 }
 .contact .content p{
     font-weight: 300;
     color: #ffff;
+	
 }
 .container{
     width: 100%;
@@ -360,10 +343,11 @@ body {
 .container .contactInfo .box .text h3{
     display: flex;
     margin-left: 20px;
-    font-size: 16px;
-    color: rgb(217, 255, 0);
+    font-size: 19px;
+    color: #000000;
     /* flex-direction: column; */
-    font-weight: 500;
+    font-weight:  bolder;
+	
 }
 .container .contactInfo .box .text p{
     display: flex;
@@ -377,6 +361,7 @@ body {
     width: 40%;
     padding: 40px;
     background: #fff;
+	border-radius: 6px;
 
 }
 .contactForm h2{
@@ -420,7 +405,7 @@ body {
 }
 .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
+    background-color: #009579;
     color: #fff;
     border: none;
     cursor: pointer;
