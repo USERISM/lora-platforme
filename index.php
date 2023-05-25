@@ -183,7 +183,7 @@ $payload_obj = json_decode($payload_json);
   dashboardLink.click();
 });
 
-     Add event listeners to the icon links
+    // Add event listeners to the icon links
 	dashboardLink.addEventListener('click', function () {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'dashboardContent.html', true); // Replace 'dashboardContent.html' with the URL of your dashboard content
