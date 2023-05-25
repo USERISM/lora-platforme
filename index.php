@@ -179,11 +179,25 @@ $payload_obj = json_decode($payload_json);
     const menuContent = document.getElementById('menu-content');
 	const contactus = document.getElementById('contact-us');
 
-    // Add event listeners to the icon links
-    dashboardLink.addEventListener('click', function () {
-        // Load the dashboard content
-        menuContent.innerHTML = '<br> <iframe src="http://localhost:3000/d-solo/e8cd26d8-a10a-464b-abb4-cbfe2195166d/loraaaa?orgId=1&from=1684431130000&to=1684431152000&theme=light&panelId=7" width="450" height="200" frameborder="0"></iframe> <iframe src="http://localhost:3000/d-solo/e8cd26d8-a10a-464b-abb4-cbfe2195166d/loraaaa?orgId=1&from=1684431130000&to=1684431152000&theme=light&panelId=1" width="450" height="200" frameborder="0"></iframe> <iframe src="http://localhost:3000/d-solo/e8cd26d8-a10a-464b-abb4-cbfe2195166d/loraaaa?orgId=1&from=1684431130000&to=1684431152000&theme=light&panelId=3" width="450" height="200" frameborder="0"></iframe> <br> <iframe src="http://localhost:3000/d-solo/e8cd26d8-a10a-464b-abb4-cbfe2195166d/loraaaa?orgId=1&from=1684427060500&to=1684443338500&theme=light&panelId=6" width="450" height="400" frameborder="0"></iframe> <iframe src="http://localhost:3000/d-solo/e8cd26d8-a10a-464b-abb4-cbfe2195166d/loraaaa?orgId=1&from=1684427060500&to=1684443338500&theme=light&panelId=4" width="450" height="400" frameborder="0"></iframe> <iframe src="http://localhost:3000/d-solo/e8cd26d8-a10a-464b-abb4-cbfe2195166d/loraaaa?orgId=1&from=1684427060500&to=1684443338500&theme=light&panelId=5" width="450" height="400" frameborder="0"></iframe>';
-    });
+	window.addEventListener('load', function () {
+  dashboardLink.click();
+});
+
+     Add event listeners to the icon links
+	dashboardLink.addEventListener('click', function () {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'dashboardContent.html', true); // Replace 'dashboardContent.html' with the URL of your dashboard content
+
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      menuContent.innerHTML = xhr.responseText;
+    }
+  };
+
+  xhr.send();
+});
+
+
 
 	contactus.addEventListener('click', function () {
 		menuContent.innerHTML =' <section class="contact"><div class="content"><h2>Contact Us</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil odit adipisci illo inventore eum, corrupti commodi delectus.</p></div><div class="container"><div class="contactInfo"><div class="box"><div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div><div class="text"><h3>Address</h3><p>1234 Pachora Road,<br>Pune,India,<br>14568</p></div></div><div class="box"><div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div><div class="text"><h3>Phone</h3><p>12345678</p></div></div><div class="box"><div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></div><div class="text"><h3>Email</h3><p>abc@gmail.com</p></div></div></div><div class="contactForm"><form><h2>Send Message</h2><div class="inputBox"><input type="text" required="required"><span>Full Name</span></div><div class="inputBox"><input type="text" required="required"><span>Eamil</span></div><div class="inputBox"><textarea name="" id="" required="required"></textarea><span>Type your Message...</span></div><div class="inputBox"><input type="submit" value="Send"></div></form></div></div></section>';
