@@ -120,7 +120,7 @@ $payload_obj = json_decode($payload_json);
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#" id="about-us">
 					<i class='bx bxs-group' ></i>
 					<span class="text">about us</span>
 				</a>
@@ -178,13 +178,14 @@ $payload_obj = json_decode($payload_json);
     const mapLink = document.getElementById('map-link');
     const menuContent = document.getElementById('menu-content');
 	const contactus = document.getElementById('contact-us');
+	const aboutus = document.getElementById('about-us');
 
+    // Add event listeners to the icon links
 	window.addEventListener('load', function () {
   dashboardLink.click();
 });
 
-    // Add event listeners to the icon links
-	dashboardLink.addEventListener('click', function () {
+dashboardLink.addEventListener('click', function () {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'dashboardContent.html', true); // Replace 'dashboardContent.html' with the URL of your dashboard content
 
@@ -198,6 +199,16 @@ $payload_obj = json_decode($payload_json);
 });
 
 
+/*
+window.addEventListener('load', function () {
+  loadDashboardContent(); // Initial loading
+
+  // Refresh content every 60 seconds (adjust as needed)
+  setInterval(function () {
+    loadDashboardContent();
+  }, 60000); 
+});
+*/
 
 	contactus.addEventListener('click', function () {
 		menuContent.innerHTML =' <section class="contact"><div class="content"><h2>Contact Us</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil odit adipisci illo inventore eum, corrupti commodi delectus.</p></div><div class="container"><div class="contactInfo"><div class="box"><div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div><div class="text"><h3>Address</h3><p>1234 Pachora Road,<br>Pune,India,<br>14568</p></div></div><div class="box"><div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div><div class="text"><h3>Phone</h3><p>12345678</p></div></div><div class="box"><div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></div><div class="text"><h3>Email</h3><p>abc@gmail.com</p></div></div></div><div class="contactForm"><form><h2>Send Message</h2><div class="inputBox"><input type="text" required="required"><span>Full Name</span></div><div class="inputBox"><input type="text" required="required"><span>Eamil</span></div><div class="inputBox"><textarea name="" id="" required="required"></textarea><span>Type your Message...</span></div><div class="inputBox"><input type="submit" value="Send"></div></form></div></div></section>';
@@ -274,7 +285,24 @@ var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 		
     });
 
-
+	aboutus.addEventListener('click', function () {
+  // Perform AJAX request
+  $.ajax({
+    url: 'index.html', // Path to your content file
+    dataType: 'html',
+    success: function(response) {
+      // Append the loaded content to the menuContent element
+      menuContent.innerHTML = response;
+      
+      // If you have JavaScript code in the loaded content, you can execute it here
+      // ...
+    },
+    error: function() {
+      // Handle any error that occurs during the AJAX request
+      console.log('Error loading content.');
+    }
+  });
+});
 
 		
 	</script>
