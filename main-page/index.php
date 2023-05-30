@@ -89,8 +89,9 @@ $payload_obj = json_decode($payload_json);
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-		<!-- 	<i class='bx bxs-smile'></i> -->
-			<span class="text">AdminHub</span>
+			<img src="Group17.png" width="50px" hight="50px">
+			 
+			<span class="text">&nbsp;&nbsp;&nbsp;&nbsp;LoRaWAN</span>
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
@@ -151,14 +152,14 @@ $payload_obj = json_decode($payload_json);
 		<nav>
 			<i class='bx bx-menu' ></i>
 			<a href="#" class="nav-link">Categories</a>
-			<form action="#">
+			<!-- <form action="#">
 				<div class="form-input">
 					<input type="search" placeholder="Search...">
 					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
-				</div>
+				</div> 
 			</form>
 			<input type="checkbox" id="switch-mode" hidden>
-			<label for="switch-mode" class="switch-mode"></label>
+			<label for="switch-mode" class="switch-mode"></label>-->
 			<!--<a href="#" class="notification">
 				<i class='bx bxs-bell' ></i>
 				<span class="num">8</span>
@@ -187,7 +188,7 @@ $payload_obj = json_decode($payload_json);
 
 dashboardLink.addEventListener('click', function () {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'dashboardContent.html', true); // Replace 'dashboardContent.html' with the URL of your dashboard content
+  xhr.open('GET', 'dashboardConten.html', true); // Replace 'dashboardContent.html' with the URL of your dashboard content
 
   xhr.onload = function () {
     if (xhr.status === 200) {
@@ -211,7 +212,8 @@ window.addEventListener('load', function () {
 */
 
 	contactus.addEventListener('click', function () {
-		menuContent.innerHTML =' <section class="contact"><div class="content"><h2>Contact Us</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil odit adipisci illo inventore eum, corrupti commodi delectus.</p></div><div class="container"><div class="contactInfo"><div class="box"><div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div><div class="text"><h3>Address</h3><p>1234 Pachora Road,<br>Pune,India,<br>14568</p></div></div><div class="box"><div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div><div class="text"><h3>Phone</h3><p>12345678</p></div></div><div class="box"><div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></div><div class="text"><h3>Email</h3><p>abc@gmail.com</p></div></div></div><div class="contactForm"><form><h2>Send Message</h2><div class="inputBox"><input type="text" required="required"><span>Full Name</span></div><div class="inputBox"><input type="text" required="required"><span>Eamil</span></div><div class="inputBox"><textarea name="" id="" required="required"></textarea><span>Type your Message...</span></div><div class="inputBox"><input type="submit" value="Send"></div></form></div></div></section>';
+		menuContent.innerHTML =' <img src="contact-us.png" width="1450px" height="760px">';
+		//<section class="contact"><div class="content"><h2>Contact Us</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil odit adipisci illo inventore eum, corrupti commodi delectus.</p></div><div class="container"><div class="contactInfo"><div class="box"><div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div><div class="text"><h3>Address</h3><p>1234 Pachora Road,<br>Pune,India,<br>14568</p></div></div><div class="box"><div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div><div class="text"><h3>Phone</h3><p>12345678</p></div></div><div class="box"><div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></div><div class="text"><h3>Email</h3><p>abc@gmail.com</p></div></div></div><div class="contactForm"><form><h2>Send Message</h2><div class="inputBox"><input type="text" required="required"><span>Full Name</span></div><div class="inputBox"><input type="text" required="required"><span>Eamil</span></div><div class="inputBox"><textarea name="" id="" required="required"></textarea><span>Type your Message...</span></div><div class="inputBox"><input type="submit" value="Send"></div></form></div></div></section>';
 		
 		
 	})
@@ -286,8 +288,15 @@ var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
     });
 
 	aboutus.addEventListener('click', function () {
+
+		menuContent.innerHTML =' <img src="Desktopoo.png" width="1400px" height="1714px">';
+
+
+
+
+
   // Perform AJAX request
-  $.ajax({
+  /*$.ajax({
     url: 'index.html', // Path to your content file
     dataType: 'html',
     success: function(response) {
@@ -301,7 +310,7 @@ var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
       // Handle any error that occurs during the AJAX request
       console.log('Error loading content.');
     }
-  });
+  });*/
 });
 
 		

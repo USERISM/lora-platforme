@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing : border-box;
   font-familly : "Poppins", sans-serif;
+
+  
+}
+body{
+    width:  1000px;
+  height: 2000px;
 }
 
 .container {
@@ -21,7 +27,7 @@
   position: relative;
   max-width : 300px;
   height : 225px;  
-  background-color : #fff;
+  background-image : #fff;
   margin : 30px 10px;
   padding : 20px 15px;
   
@@ -92,6 +98,7 @@
   font-size: 13px;
   text-align: center;
 }
+
 
 
 
