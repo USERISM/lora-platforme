@@ -57,7 +57,7 @@ if ($result->num_rows > 0) {
     // The submitted tenantid and tenantname are correct
     // Proceed with the login process or other actions
     echo "Login successful!";
-    header("Location: index.php");
+    header("Location: ../main-page/index.php");
     
 } else {
     // No matching record found
