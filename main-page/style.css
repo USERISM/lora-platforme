@@ -9,7 +9,10 @@
 a {
 	text-decoration: none;
 }
-
+body, html {
+    height: 800px;
+   
+  }
 li {
 	list-style: none;
 }
@@ -31,9 +34,7 @@ li {
 	--light-orange: #FFE0D3;
 }
 
-html {
-	overflow-x: hidden;
-}
+
 
 body.dark {
 	--light: #0C0C1E;
@@ -84,6 +85,7 @@ body {
 	z-index: 500;
 	padding-bottom: 20px;
 	box-sizing: content-box;
+	
 }
 #sidebar .brand .bx {
 	min-width: 60px;

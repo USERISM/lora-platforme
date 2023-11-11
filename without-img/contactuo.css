@@ -1,0 +1,76 @@
+body{
+    background-image: url('contact4.png');
+  
+}
+
+.box{
+    margin-top: 180px;
+    margin-left: 350px;
+    
+}
+
+.box  input , textarea{
+    
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: rgb(160, 201, 179);
+  }
+
+.box input {
+    width: 200px;
+    height: 30px;
+    
+
+}
+.box button{
+    cursor: pointer;
+    background-image: linear-gradient(-45deg,#4E857B,#09594a);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    margin-left: 40px;
+    
+}
+
+.container{
+    display: flex;
+    
+    
+}
+.paragraphe{
+    margin-top: 230px;
+    margin-left: 150px;
+ 
+}
+
+.paragraphe h1{
+    font-size: 70px;
+}
+.paragraphe .contact-us{
+    color: #009579;
+}
+
+.paragraphe img{
+    width: 30px;
+    height: 30px;
+}
+
+.paragraphe p{
+    font-size: 15px;
+}
+
+.paragraphe .our-information{
+    font:bolder;
+    font-size: 20px;
+}
+
+p,h1, h2, label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
